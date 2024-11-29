@@ -7,14 +7,13 @@ on:
       - '**' # Ignore any tags here
     branches:
       - main
-      - master
     #
     # Trigger when either files in the docs folder,
     # the requirements.txt file or the mkdocs.yml file
     # are edited and commited.
     paths:
       - 'docs/**'
-      - 'requirements.txt'
+      # - 'requirements.txt'
       - 'mkdocs.yml'
 
 # These permissions are required for it to work
@@ -44,7 +43,7 @@ jobs:
           python_version: '3.x' # Uses latest 3.x version.
       - name: Install dependencies
         # Alternatively: pip install mkdocs
-        run: pip install -r requirements.txt
+        run: pip install mkdocs-material pillow cairosvg
       - name: Build Docs
         run: mkdocs build
       - name: Configure GitHub Pages
