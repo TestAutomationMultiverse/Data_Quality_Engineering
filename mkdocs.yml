@@ -1,5 +1,5 @@
-site_name: MkDocs YouTube Tutorial
-site_url: https://james-willett.github.io/mkdocs-material-youtube-tutorial/
+site_name: data testing automation building blocks
+site_url: https://testautomationmultiverse.github.io/Data_Quality_Engineering/
 theme:
   name: material
   features:
