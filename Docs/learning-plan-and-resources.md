@@ -1,5 +1,5 @@
 # Skills Overview (in progress)
-## Data engineering Foundations
+## Data engineering Foundations (TBD)
   Data Enginerring, ETL and business analytics basics  
   - Data Analysis
   - Data Quality Rules
@@ -14,59 +14,66 @@
 
 ## data engineering landscape (code and no-code tools)
 ## Python
+- basic python: https://www.udemy.com/course/100-days-of-code/?couponCode=BFCPSALE24
+- data analytics: https://www.udemy.com/course/the-data-analyst-course-complete-data-analyst-bootcamp/?couponCode=BFCPSALE24
 ### Beginner
-	- Working with Variables in Python to Manage Data
-	- Understanding Data Types and How to Manipulate Strings
-	- Control Flow and Logical Operators
-	- Randomisation and Python Lists
-	- Python Loops
-	- Python Functions & Karel
-	- Hangman
-	- Function Parameters & Ceasar Cipher
-	- Dictionaries, Nesting and the Secret Auction
-	- Functions with Outputs
-	- The Blackjack Capstone Project
-	- Scope & Number Guessing Game
-	- Debugging: how to Find and Fix Errors in your Code
-	- Higher Lower Game Project
+  - Working with Variables in Python to Manage Data
+  - Understanding Data Types and How to Manipulate Strings
+  - Control Flow and Logical Operators
+  - Randomisation and Python Lists
+  - Python Loops
+  - Python Functions & Karel
+  - Hangman
+  - Function Parameters & Ceasar Cipher
+  - Dictionaries, Nesting and the Secret Auction
+  - Functions with Outputs
+  - The Blackjack Capstone Project
+  - Scope & Number Guessing Game
+  - Debugging: how to Find and Fix Errors in your Code
+  - Higher Lower Game Project
+  - Local Development Environment Setup and the Coffee Machine
+  - Object Oriented Programming (OOP)
+  - The Quiz Project & the Benefits of OOP
+  - Turtle & the Graphical User Interface (GUI)
+  - Instances, State and Higher Order Functions
+  - Build the Snake Game Part1: Animation & Coordinates
+  - Build the Snake Game Part2: Inheritence & List Slicing
+  - Build Pong: The Famous Arcade Game
+  - The Turtle Crossing Capstone Project
+  - Files, Directories and Paths
+  - Working with CSV and the Pandas Library
+  - List Comprehension and the NATO Alphabet
+  - Errors, Exceptions and JSON Data: Improving the Password
+  - Flash Card App Capstone Project
 ### Intermediate
-	- Local Development Environment Setup and the Coffee Machine
-	- Object Oriented Programming (OOP)
-	- The Quiz Project & the Benefits of OOP
-	- Turtle & the Graphical User Interface (GUI)
-	- Instances, State and Higher Order Functions
-	- Build the Snake Game Part1: Animation & Coordinates
-	- Build the Snake Game Part2: Inheritence & List Slicing
-	- Build Pong: The Famous Arcade Game
-	- The Turtle Crossing Capstone Project
-	- Files, Directories and Paths
-	- Working with CSV and the Pandas Library
-	- List Comprehension and the NATO Alphabet
-	- Errors, Exceptions and JSON Data: Improving the Password
-	- Flash Card App Capstone Project
+  - Send Email (smtplib) & Manage Dates (datetime)
+  - API Endpoints & API Parameters - ISS Overhead Notifier
+  - API Practice - Creating a GUI Quiz App
+  - Keys, Authentication & Environment Variables: Send SMS
+  - Stock Trading News Alert Project
+  - Habit Tracking Project: API Post Requests & Headers
+  - Workout Tracking Using Google Sheets
+  - Capstone Part 1: Flight Deal Finder
+  - Capstone Part 2: Flight Club
+  - Web Scraping with Beautiful Soup
+  - Create a Spotify Playlist using the Musical Time Machine
+  - Create and Automated Amazon Price Tracker
+  - Selenium Webdriver Browser and Game Playing Bot
+  - Automating Job Applications on LinkedIn
+  - Auto Tinder Swiping Bot
+  - Internet Speed Twitter Complaint Bot
+  - Instagram Follower Bot
+  - Web Scraping Capstone - Data Entry Job Automation
+  - Introduction to Web Development with Flask
+  - HTML & URL Parsing in Flask and the Higher Lower Game
+  - Rendering HTML/Static files and Using Website Templates
+  - Templating with Jinja in Flask Applications
 ### Advanced
-	- Send Email (smtplib) & Manage Dates (datetime)
-	- API Endpoints & API Parameters - ISS Overhead Notifier
-	- API Practice - Creating a GUI Quiz App
-	- Keys, Authentication & Environment Variables: Send SMS
-	- Stock Trading News Alert Project
-	- Habit Tracking Project: API Post Requests & Headers
-	- Workout Tracking Using Google Sheets
-	- Capstone Part 1: Flight Deal Finder
-	- Capstone Part 2: Flight Club
-	- Web Scraping with Beautiful Soup
-	- Create a Spotify Playlist using the Musical Time Machine
-	- Create and Automated Amazon Price Tracker
-	- Selenium Webdriver Browser and Game Playing Bot
-	- Automating Job Applications on LinkedIn
-	- Auto Tinder Swiping Bot
-	- Internet Speed Twitter Complaint Bot
-	- Instagram Follower Bot
-	- Web Scraping Capstone - Data Entry Job Automation
-	- Introduction to Web Development with Flask
-	- HTML & URL Parsing in Flask and the Higher Lower Game
-	- Rendering HTML/Static files and Using Website Templates
-	- Templating with Jinja in Flask Applications
+  - Statistics and mathematics using python
+   - pandas
+    - numpy
+     - visualizations
+      - projects
 
 ## SQL
 ### beginner:
