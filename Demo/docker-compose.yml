@@ -1,0 +1,52 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:13
+    container_name: postgres_db
+    environment:
+      POSTGRES_USER: etl_user
+      POSTGRES_PASSWORD: etl_pass
+      POSTGRES_DB: trading_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init_trading_data.sql:/docker-entrypoint-initdb.d/init_trading_data.sql
+
+  python-etl:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: python_etl
+    depends_on:
+      - postgres
+    environment:
+      - DB_HOST=postgres
+      - DB_USER=etl_user
+      - DB_PASSWORD=etl_pass
+      - DB_NAME=trading_db
+    command: python /etl/etl_script.py
+    volumes:
+      - ./etl:/etl
+    restart: on-failure
+
+  airflow:
+    image: apache/airflow:2.5.0
+    container_name: airflow
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+      - AIRFLOW__CORE__SQL_ALCHEMY_CONN=postgresql+psycopg2://etl_user:etl_pass@postgres:5432/trading_db
+      - AIRFLOW__CORE__LOAD_EXAMPLES=False
+      - AIRFLOW_UID=50000
+    ports:
+      - "8080:8080"
+    volumes:
+      - airflow_data:/opt/airflow
+    depends_on:
+      - postgres
+    restart: on-failure
+
+volumes:
+  postgres_data:
+  airflow_data:

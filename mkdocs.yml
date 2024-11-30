@@ -1,4 +1,4 @@
-site_name: data testing automation building blocks
+site_name: Data Testing Automation building blocks
 site_url: https://testautomationmultiverse.github.io/Data_Quality_Engineering/
 theme:
   name: material
@@ -46,6 +46,11 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 
 copyright: |
   &copy; 2024
