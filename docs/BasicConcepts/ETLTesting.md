@@ -193,3 +193,47 @@ Copy`SELECT product_id, COUNT(*) FROM inventory  GROUP BY product_id HAVING COUN
 #### 4\. Regulatory Compliance:
 
 -   Adherence to data quality standards helps organizations meet regulatory requirements, avoiding legal and financial consequences.
+
+
+``` mermaid
+graph TB
+    %% Roles and their descriptions
+    A[ETL Developer: Codes data movement based on Mapping Requirements] 
+    B[Data Tester: Tests data movement based on Mapping Requirements]
+    C[BI Developer: Extracts data for reports]
+
+    %% Data flow sections - Grouped in one color
+    classDef dataFlow fill:#ffcc00,stroke:#ffcc00;
+    D[Source Data] --> E[ETL]
+    E --> F[Big Data Lake]
+    F --> G[Data Warehouse]
+    G --> H[Data Mart]
+    H --> I[BI & Analytics]
+    class D,E,F,G,H,I dataFlow;
+
+    %% Testing points
+    E --> J[ETL & Data Testing]
+    F --> K[ETL & Data Testing]
+    G --> L[ETL & Data Testing]
+    H --> M[ETL & Data Testing]
+    I --> O[Testing Reports & Visualization]
+
+    %% QuerySurge for testing
+    J --> N[Data Testing Tool]
+    K --> N
+    L --> N
+    M --> N
+    O --> N
+
+    %% Data flow links to roles
+    A --> E
+    B --> E
+    B --> F
+    B --> G
+    B --> H
+    B --> O
+    C --> H
+
+    %% Styling for Data Tester-related arrows (green)
+    linkStyle 5,6,7,8,10,11,12,13,14 stroke:#00ff00,stroke-width:2;
+```

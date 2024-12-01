@@ -1,5 +1,7 @@
 # Fundamentals of data engineering
 
+source of this data is a summery of "[**Fundamentals of Data Engineering**](https://www.oreilly.com/library/view/fundamentals-of-data/9781098108298/)" 
+
 In today's data-driven environment, businesses continuously face the challenge of harnessing and interpreting vast amounts of information. Data engineering is a crucial intersection of technology and business intelligence and plays a critical role in everything from data science to machine learning and artificial intelligence.
 
 So, what makes data engineering indispensable? In a nutshell: its ability to convert raw data into actionable insights.
@@ -10,37 +12,15 @@ This fundamentals of data engineering guide offers a broad overview, preparing r
 
 ## Summary of fundamentals of data engineering
 
-Concept
-
-Description
-
-Data engineering
-
-The discipline focuses on preparing “big data” for analytical or operational uses.
-
-Use cases
-
-Practical scenarios where data engineering plays a pivotal role, such as e-commerce analytics or real-time monitoring.
-
-Data engineering lifecycle
-
-The stages, from data ingestion to analytics, encompass integration, transformation, warehousing, and maintenance.
-
-Data pipelines
-
-A visual flow of the entire data engineering process, highlighting how data moves through each stage.
-
-Batch vs. stream processing
-
-Distinguishing between processing data in large sets (batches) versus real-time (stream) processing.
-
-Data engineering best practices
-
-Established methods and strategies in data engineering to ensure data integrity, efficiency, and security.
-
-Data engineering vs. artificial intelligence
-
-Differentiating the process of preparing data for AI applications from using AI to enhance data engineering tasks.
+| Concept | Description |
+| --- | --- |
+| Data engineering | The discipline focuses on preparing “big data” for analytical or operational uses. |
+| Use cases | Practical scenarios where data engineering plays a pivotal role, such as e-commerce analytics or real-time monitoring. |
+| Data engineering lifecycle | The stages, from data ingestion to analytics, encompass integration, transformation, warehousing, and maintenance. |
+| Data pipelines | A visual flow of the entire data engineering process, highlighting how data moves through each stage. |
+| Batch vs. stream processing | Distinguishing between processing data in large sets (batches) versus real-time (stream) processing. |
+| Data engineering best practices | Established methods and strategies in data engineering to ensure data integrity, efficiency, and security. |
+| Data engineering vs. artificial intelligence | Differentiating the process of preparing data for AI applications from using AI to enhance data engineering tasks. |
 
 ## What is data engineering?
 
@@ -65,15 +45,6 @@ graph TB
         A["Data"] --> A_desc["Raw Data Chaos: Unorganized data sources create a chaotic landscape."]
     end
 ```
-
-
-Data engineering remains a dynamic and indispensable field in our data-centric world.
-
-When to choose Redpanda over Apache Kafka
-
-Start streaming data like it's 2024.
-
-[Learn More](https://redpanda.com/blog/when-to-choose-redpanda-vs-kafka)
 
 ### Data engineering use cases
 
@@ -172,8 +143,6 @@ graph TD
 
 
 ### Key considerations
-
-There are several key considerations or “undercurrents” applicable throughout the process. They have been elaborated in detail in the book, "[**Fundamentals of Data Engineering**](https://www.oreilly.com/library/view/fundamentals-of-data/9781098108298/),". Here’s a quick overview:
 
 #### Security
 

@@ -41,28 +41,6 @@ Here are a few tips for data testing:
 -   Use a variety of testing methods: There are a number of different data testing methods available. Use a variety of methods to ensure that the data is tested thoroughly.
 -   Document the results: It is important to document the results of your data testing efforts. This will help you to track your progress and identify areas where improvement is needed.
 
-# Data Testing Tools
-
-There are a number of different data testing tools available, both manual and automated. Some of the most popular data testing tools include:
-
--   Manual data testing tools: Manual data testing tools typically involve using spreadsheets and other common software applications to test data. Manual data testing can be time-consuming and error-prone, but it is often necessary to test complex data sets and/or data that is not easily automated.
--   Automated data testing tools: Automated data testing tools use scripts to automate the data testing process. Automated data testing can be very efficient and effective, but it is important to develop and maintain the test scripts carefully.
-
-Some popular manual data testing tools include:
-
--   Microsoft Excel
--   Google Sheets
--   OpenOffice Calc
--   SQL Server Management Studio
-
-Some popular automated data testing tools include:
-
--   iCEDQ
--   Selenium
--   TestComplete
--   UFT One
--   DataGrip
-
 # Data Testing Process
 
 The data testing process typically involves the following steps:

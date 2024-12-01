@@ -1,7 +1,5 @@
 # Test Plan
 
-# **Test Plan for ETL Project**
-
 ## **1\. Introduction**
 
 ### **1.1 Purpose**

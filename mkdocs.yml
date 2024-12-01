@@ -32,17 +32,15 @@ plugins:
 
 nav:
   - Home:
-    - index.md
+    - data_engineering.md
+    - data_governance.md
   - BasicConcepts:
     - BasicConcepts/intro.md
-    - BasicConcepts/DataMigrationTesting.md
     - BasicConcepts/ETLTesting.md
-    - BasicConcepts/BigDataTesting.md
   - test artifacts:
     - test artifacts/Test_Plan.md
     - test artifacts/Test_Strategy.md
-    - test artifacts/TestcaseDesign.md
-
+  - data_engineering_tool_ecosystem.md
   - learning-plan-and-resources.md
 
 markdown_extensions:
