@@ -164,12 +164,6 @@ Data architecture supports an organization’s long-term business goals and stra
 
 While data engineering has become more abstract and tool-driven, data engineers still need to write core data processing code proficiently in different frameworks and languages. They must also employ proper code-testing methodologies and may need to solve custom coding problems beyond their chosen tools, especially when managing infrastructure in cloud environments through Infrastructure as Code (IaC) frameworks.
 
-Redpanda: a powerful Kafka alternative
-
-Fully Kafka API compatible. 6x faster. 100% easier to use.
-
-[Learn More](https://redpanda.com/what-is-redpanda)
-
 ## Data engineering best practices
 
 Navigating the data engineering world demands precision and a deep understanding of best practices. Low-quality data leads to skewed analytics, resulting in poor business decisions.

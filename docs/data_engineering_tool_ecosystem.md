@@ -12,6 +12,8 @@ Data engineering involves a complex set of tasks that include moving data from v
 - Analytics & Visualisation
 - ML/AI Platform
 
+![data engineering Ecosystem](./assets/tool_ecosystem_2.png)
+
 ## STORAGE SYSTEMS
 At the core of data engineering are databases where all data handling processes begin and end. These can be:
 

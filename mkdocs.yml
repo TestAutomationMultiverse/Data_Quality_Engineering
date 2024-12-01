@@ -34,12 +34,17 @@ nav:
   - Home:
     - data_engineering.md
     - data_governance.md
-  - BasicConcepts:
+  - Basic Concepts:
     - BasicConcepts/intro.md
     - BasicConcepts/ETLTesting.md
-  - test artifacts:
-    - test artifacts/Test_Plan.md
+  - Statistics:
+    - Statistics/statistics.md
+  - Test Artifacts:
     - test artifacts/Test_Strategy.md
+    - test artifacts/Test_Plan.md
+    - test artifacts/TraceabilityMatrix.md
+    - test artifacts/Documentation.md
+    - test artifacts/Defect_Report.md
   - data_engineering_tool_ecosystem.md
   - learning-plan-and-resources.md
 
