@@ -299,63 +299,23 @@ For data that needs to be cleaned, aggregated, or merged from different sources,
 - [Deeque](https://github.com/awslabs/deequ) - A library based on Apache Spark for measuring data quality in large datasets
 - [Pandera](https://github.com/unionai-oss/pandera) - A light-weight, flexible, and expressive statistical data testing library
 - [Soda](https://github.com/sodadata/soda-core) - A CLI tool and Python library for data quality testing
+- [Datavines](https://github.com/datavane/datavines) - Datavines is Next-gen Data Observability Platform
+- [pointblank](https://github.com/rstudio/pointblank) - Data quality assessment and metadata reporting for data frames and database tables
+- [DataQualityDashboard](https://github.com/OHDSI/DataQualityDashboard) - A tool to help improve data quality standards in observational data science.
+- [dqo](https://github.com/dqops/dqo) - Data Quality and Observability platform for the whole data lifecycle, from profiling new data sources to full automation with Data Observability. Configure data quality checks from the UI or in YAML files, let DQOps run the data quality checks daily to detect data quality issues.
+- [YData Profiling](https://docs.profiling.ydata.ai/latest/) -  Data quality profiling and exploratory data analysis are crucial steps in the process of Data Science and Machine Learning development. YData-profiling is a leading tool in the data understanding step of the data science workflow as a pioneering Python package.
+- [dbt Core](https://github.com/dbt-labs/dbt-core) - dbt enables data analysts and engineers to transform their data using the same practices that software engineers use to build applications.
+- [Griffin](https://github.com/apache/griffin) - Big Data Quality Solution For Batch and Streaming
 
+- [data cleaner](https://datacleaner.github.io/)
+- [clean lab](https://github.com/cleanlab/cleanlab)
+- [Qualitis](https://github.com/WeBankFinTech/Qualitis)
 
-    - https://github.com/datavane/datavines
-    - https://github.com/sodadata/soda-core
-
-    - https://github.com/rstudio/pointblank
-    - https://github.com/OHDSI/DataQualityDashboard
-    - https://github.com/dqops/dqo
-
-
-
-
-# Data testing Tools
-
-## Open source:
-
-
-Open source data quality tools are software applications designed to assess and improve the quality of data within an organization. These tools provide functionalities to identify, measure, monitor, and enhance the overall quality of data assets.
-
-### popular open-source data quality tools
-
-
-Few solutions exist in the open-source community either in the form of libraries or complete stand-alone platforms, which can be used to assure a certain data quality, especially when continuous imports happen. Organisations may consider picking up one of the available options – Apache Griffin, Deequ, DDQ and Great Expectations
-
-1. Deequ
-2. dbt Core
-3. MobyDQ
-4. Great Expectations
-5. pandas_profiling/y_profiling
-5. Soda Core
-6. Cucumber
-7. Griffin: 
-    - https://github.com/apache/griffin
-    - https://griffin.apache.org/
-drunkun data quality: 
-dataframe rules engine: https://github.com/databrickslabs/dataframe-rules-engine
-
-###
-
-https://www.talend.com/products/data-quality/
-https://www.querysurge.com/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#### not maintained:
+- [drunkun data quality](https://github.com/FRosner/drunken-data-quality) - Spark package for checking data quality (not maintained)
+- [dataframe rules engine](https://github.com/databrickslabs/dataframe-rules-engine) - Extensible Rules Engine for custom Dataframe / Dataset validation 
+- [MobyDQ](https://ubisoft.github.io/mobydq/) - Automate data quality checks on data pipelines
+- [agile-lab-dev](https://github.com/agile-lab-dev/DataQuality)
 
 # Essential Tools for Data Engineering
 
@@ -453,19 +413,3 @@ The landscape of data repositories, data pipelines, and integration platforms is
 
 
 
-
-open-source data quality tools
-
-
-
-dead projects: https://github.com/ubisoft/mobydq
-
-
-
-
-
-https://datacleaner.github.io/
-https://github.com/agile-lab-dev/DataQuality
-
-https://github.com/WeBankFinTech/Qualitis
-https://github.com/cleanlab/cleanlab

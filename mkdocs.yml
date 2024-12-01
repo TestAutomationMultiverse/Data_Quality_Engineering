@@ -37,6 +37,9 @@ nav:
   - Basic Concepts:
     - BasicConcepts/intro.md
     - BasicConcepts/ETLTesting.md
+    - BasicConcepts/Database_Monitoring.md
+    - BasicConcepts/data_monitoring.md
+
   - Statistics:
     - Statistics/statistics.md
   - Test Artifacts:
