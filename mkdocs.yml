@@ -30,6 +30,21 @@ theme:
 plugins:
   - search
 
+nav:
+  - Home:
+    - index.md
+  - BasicConcepts:
+    - BasicConcepts/intro.md
+    - BasicConcepts/DataMigrationTesting.md
+    - BasicConcepts/ETLTesting.md
+    - BasicConcepts/BigDataTesting.md
+  - test artifacts:
+    - test artifacts/Test_Plan.md
+    - test artifacts/Test_Strategy.md
+    - test artifacts/TestcaseDesign.md
+
+  - learning-plan-and-resources.md
+
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
