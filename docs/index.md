@@ -1,26 +1,6 @@
 # Fundamentals of data engineering
 
-source of this data is a summery of "[**Fundamentals of Data Engineering**](https://www.oreilly.com/library/view/fundamentals-of-data/9781098108298/)" 
-
-In today's data-driven environment, businesses continuously face the challenge of harnessing and interpreting vast amounts of information. Data engineering is a crucial intersection of technology and business intelligence and plays a critical role in everything from data science to machine learning and artificial intelligence.
-
-So, what makes data engineering indispensable? In a nutshell: its ability to convert raw data into actionable insights.
-
-With the explosion of data sources – from website interactions, transactions, and social media engagements to sensor readings – businesses are generating data at an unparalleled rate. Data engineering equips us with the tools and methodologies needed to gather, process, and structure the data, ensuring it is ready for analysis and decision-making.
-
-This fundamentals of data engineering guide offers a broad overview, preparing readers for a more detailed exploration of data engineering principles.
-
-## Summary of fundamentals of data engineering
-
-| Concept | Description |
-| --- | --- |
-| Data engineering | The discipline focuses on preparing “big data” for analytical or operational uses. |
-| Use cases | Practical scenarios where data engineering plays a pivotal role, such as e-commerce analytics or real-time monitoring. |
-| Data engineering lifecycle | The stages, from data ingestion to analytics, encompass integration, transformation, warehousing, and maintenance. |
-| Data pipelines | A visual flow of the entire data engineering process, highlighting how data moves through each stage. |
-| Batch vs. stream processing | Distinguishing between processing data in large sets (batches) versus real-time (stream) processing. |
-| Data engineering best practices | Established methods and strategies in data engineering to ensure data integrity, efficiency, and security. |
-| Data engineering vs. artificial intelligence | Differentiating the process of preparing data for AI applications from using AI to enhance data engineering tasks. |
+source of this website is a summery of "[**Fundamentals of Data Engineering**](https://www.oreilly.com/library/view/fundamentals-of-data/9781098108298/)" 
 
 ## What is data engineering?
 
@@ -33,8 +13,6 @@ Data engineering uses various tools, techniques, and best practices to achieve e
 -   Semi-structured data that includes both structured and unstructured elements.
 
 Each dataset and its use case for analysis requires a different strategy. For example, some data types are processed infrequently in batches, while others are processed continuously as soon as they are generated. Sometimes, data integration is done from several sources, and all data is stored centrally for analytics. At other times, subsets of data are pulled from different sources and prepared for analytics.
-
-Tools and frameworks like Apache Hadoop, Apache Spark™, Apache Kafka®, Airflow, Redpanda, Apache Beam®, Apache Flink®, and more exist to implement the different data engineering approaches. The diverse landscape of tools ensures flexibility, scalability, and performance, regardless of the nature or volume of data.
 
 ``` mermaid
 graph TB
@@ -168,101 +146,14 @@ While data engineering has become more abstract and tool-driven, data engineers 
 
 Navigating the data engineering world demands precision and a deep understanding of best practices. Low-quality data leads to skewed analytics, resulting in poor business decisions.
 
-Best practice
+| Best practice | Importance |
+| --- | --- |
+| Proactive data monitoring | Regularly checks datasets for anomalies to maintain data integrity. This includes identifying missing, duplicate, or inconsistent data entries. |
+| Schema drift management | Detects and addresses changes in data structure, ensuring compatibility and reducing data pipeline breaks. |
+| Continuous documentation | Manages descriptive information about data, aiding in discoverability and comprehension. |
+| Data security measures | Controls and monitors access to data sources, enhancing security and compliance. |
+| Version control and backups | Tracks change to datasets over time, aiding in reproducibility and audit trails. |
 
-Importance
-
-Proactive data monitoring
-
-Regularly checks datasets for anomalies to maintain data integrity. This includes identifying missing, duplicate, or inconsistent data entries.
-
-Schema drift management
-
-Detects and addresses changes in data structure, ensuring compatibility and reducing data pipeline breaks.
-
-Continuous documentation
-
-Manages descriptive information about data, aiding in discoverability and comprehension.
-
-Data security measures
-
-Controls and monitors access to data sources, enhancing security and compliance.
-
-Version control and backups
-
-Tracks change to datasets over time, aiding in reproducibility and audit trails.
-
-### Proactive data monitoring
-
-Monitoring data quality should be an ongoing, active process, not a passive one. Regularly checking datasets for anomalies ensures that issues like missing or duplicate data are identified swiftly. Implementing automated data quality checks during data ingestion and transformation is crucial. Leveraging tools that notify of discrepancies allows for immediate intervention and corrections.
-
-A tool like Apache Griffin can be used to measure data quality across platforms in real-time, providing visibility into data health. Data engineers also perform rigorous validation checks at every data ingestion point, leveraging frameworks like Apache Beam® or Deequ. An example in practice is e-commerce platforms ensuring valid email formats and appropriate phone number entries.
-
-    # Using Python's built-in methods for simple validation
-    def is_valid_email(email):
-        return "@" in email and "." in email
-    # Simple Pytest for data validation
-    def test_data_entry(entry):
-        assert type(entry['price']) == float, "Price should be a float"
-
-### Schema drift management
-
-Schema drift—unexpected changes in data structure—can disrupt data pipelines or lead to incorrect data analysis. It can result from scenarios like an API update altering data fields. To handle schema drift, data engineers can:
-
--   Utilize dynamic schema solutions that adjust to data changes in real time.
--   Perform regular audits and validate data sources.
--   Integrate version controls for schemas, maintaining a historical record.
-
-In a Python-based workflow using Pandas, detecting schema drift looks like the one below.
-
-    import pandas as pd
-    
-    def detect_schema_drift(old_schema, new_schema):
-        if set(old_schema) != set(new_schema):
-            added = set(new_schema) - set(old_schema)
-            removed = set(old_schema) - set(new_schema)
-            return {"added": list(added), "removed": list(removed)}
-        else:
-            return None
-    
-    old_df = pd.DataFrame({
-        'A': [1,2,3],
-        'B': [4,5,6]
-    })
-    
-    new_df = pd.DataFrame({
-        'A': [1,2,3],
-        'C': [7,8,9]
-    })
-    
-    drift = detect_schema_drift(old_df.columns, new_df.columns)
-    print(drift)
-
-### Continuous documentation
-
-Maintaining up-to-date documentation becomes vital with the increasing complexity of data architectures and workflows. It ensures transparency, reduces onboarding times, and aids in troubleshooting. When multiple departments intersect, such as engineers processing data for a marketing team, a well-documented process ensures trust and clarity in data interpretation for all stakeholders.
-
-Data engineers use platforms like Confluence or GitHub Wiki to ensure comprehensive documentation for all pipelines and architectures. Making documentation a mandatory step in your data pipeline development process is one of the key fundamentals of data engineering. Use tools that allow for automated documentation updates when changes in processes or schemas occur.
-
-### Data security measures
-
-As data sources grow in number and variety, ensuring the right people have the right access becomes crucial for both data security and efficiency. Understanding a data piece's origin and journey is critical for maintaining transparency and aiding in debugging.
-
-Tools like Apache Atlas offer insights into data lineage—a necessity in sectors where compliance demands tracing data back to its origin. Systems like Apache Kafka® append changes as new records, a practice especially crucial in sectors like banking. Automated testing frameworks like Pytest and monitoring tools like Grafana all contribute to proactive data security.
-
-Some security best practices include:
-
--   Implement a federated access management system that centralizes data access controls.
--   Regularly review and update permissions to reflect personnel changes and evolving data usage requirements.
--   Avoid direct data edits that can corrupt data.
-
-In a world of increasing cyber threats, data breaches like the Marriott incident of 2018 underscore the importance of encrypting sensitive data and frequent access audits to comply with regulations like GDPR.
-
-### Version control and backups
-
-As with software development, version control in data engineering allows for tracking changes, reverting to previous states, and ensuring smooth collaboration among data engineering teams. Integrate version control systems like Git into your data engineering workflow. Regularly back up not just data but also transformation logic, configurations, and schemas.
-
-Incorporating these best practices into daily operations bolsters data reliability and security—it elevates the value that data engineering brings to an organization. Adopting and refining these practices will position you at the forefront of the discipline, paving the way for innovative approaches and solutions in the field.
 
 ## Emerging trends & challenges
 
@@ -286,14 +177,6 @@ Large language models(LLMs)like OpenAI's GPT series are pushing the boundaries o
 
 ### Using AI for data engineering
 
-The relationship between AI and data engineering is bidirectional. While AI depends on data engineering for quality inputs, data engineers also employ AI tools to refine and enhance their processes. The inter-dependency underscores the profound transformation businesses are undergoing. As AI continues to permeate various sectors, data engineering expectations also evolve, necessitating a continuous adaptation of skills, tools, and methodologies.
-
-![Using AI for data engineering](https://cdn.prod.website-files.com/6659da8aecd70e0898c0d7ed/66a3d5ac2a9a415afa72d688_668824671c9c30f482e9069b_guide-data-engineering-img3.png)
-
-Using AI for data engineering
-
-Here's a deeper dive into how AI is transforming the fundamentals of data engineering:
-
 #### Automated data cleansing
 
 AI models can learn the patterns and structures of clean data. They can automatically identify and correct anomalies or errors by comparing incoming data to known structures. This ensures that businesses operate with clean, reliable data without manual intervention, thereby increasing efficiency and reducing the risk of human error.
@@ -304,7 +187,7 @@ AI algorithms analyze the growth rate and usage patterns of stored data. By doin
 
 #### Anomaly detection
 
-Machine learning models can be trained to recognize "normal" behavior within datasets. When data deviates from this norm, it's flagged as anomalous. Early detection of anomalies can warn businesses of potential system failures, security breaches, or even changing market trends. (**Tip:** check out this tutorial on [**how to build a real-time anomaly detection using Redpanda and Bytewax**](https://redpanda.com/blog/air-quality-monitoring-application-redpanda-bytewax).)
+Machine learning models can be trained to recognize "normal" behavior within datasets. When data deviates from this norm, it's flagged as anomalous. Early detection of anomalies can warn businesses of potential system failures, security breaches, or even changing market trends.
 
 #### Imputation
 
@@ -316,7 +199,7 @@ NLP models can automatically categorize and tag unstructured data like text, ens
 
 #### Optimizing data pipelines
 
-AI algorithms can analyze data flow through various pipelines, identifying bottlenecks or inefficiencies. By [**optimizing the pipelines**](https://go.redpanda.com/data-streaming-for-ai-in-the-financial-services-industry), businesses can ensure faster data processing and lower computational costs.
+AI algorithms can analyze data flow through various pipelines, identifying bottlenecks or inefficiencies. By optimizing the pipelines, businesses can ensure faster data processing and lower computational costs.
 
 #### Semantic data search
 
@@ -327,7 +210,3 @@ Rather than relying on exact keyword matches, AI-driven semantic searches unders
 AI models can trace the journey of data from its source to its final destination, detailing all transformations along the way. This ensures transparency, aids in debugging, and ensures regulatory compliance.
 
 In essence, the integration of AI into data engineering is a game-changer. As AI simplifies and enhances complex data engineering tasks, professionals can focus on strategic activities, pushing the boundaries of what's possible in data-driven innovation. The potential of this synergy is vast, promising unprecedented advancements in data efficiency, accuracy, and utility.
-
-Have questions about Kafka or streaming data?
-
-Join a global community and chat with the experts on Slack.

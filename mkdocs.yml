@@ -32,16 +32,13 @@ plugins:
 
 nav:
   - Home:
-    - data_engineering.md
+    - index.md
     - data_governance.md
-  - Basic Concepts:
+  - Data Testing Concepts:
     - BasicConcepts/intro.md
     - BasicConcepts/ETLTesting.md
     - BasicConcepts/Database_Monitoring.md
     - BasicConcepts/data_monitoring.md
-
-  - Statistics:
-    - Statistics/statistics.md
   - Test Artifacts:
     - test artifacts/Test_Strategy.md
     - test artifacts/Test_Plan.md

@@ -140,28 +140,18 @@ Data catalogs have become the gold standard for metadata management. Unlike the 
 
 As organizations increasingly manage data on-premise and in the cloud, having a centralized source of metadata is essential for visibility into data assets, no matter where they are stored. This visibility supports day-to-day analysis and enhances critical data management functions such as governance, quality control, and migration. In a rapidly evolving data landscape, where new technologies and concepts continually emerge, a data catalog serves as a reliable, consistent tool for managing data efficiently and ensuring organizations can derive maximum value from their data.
 
-![Image showing data catalog as unifier of various data sources](https://www.alation.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2F7p3vnbbznfiw%2F5WEWEofvOl6AURsNW6jX4W%2F7f434a2a643faaf99cc86bdd654ed7ed%2Fdata-catalog-unifies-sources.png&w=3840&q=75)
-
 The data catalog unifies metadata from key assets from various sources.
 
-Data assets are the dashboards, reports, files, and tables that data workers need to find and access. They may reside in a [data lake](https://www.alation.com/blog/data-swamp-lake-lakehouse/), warehouse, business intelligence system, master data repository, or any other shared data resource, making discovering them in an organization challenging. A data catalog connects people to the contextualized, trusted data they need by centralizing the metadata.
+Data assets are the dashboards, reports, files, and tables that data workers need to find and access. They may reside in a data lake, warehouse, business intelligence system, master data repository, or any other shared data resource, making discovering them in an organization challenging. A data catalog connects people to the contextualized, trusted data they need by centralizing the metadata.
 
 ## Types of metadata
 
 There are many types of metadata. Some standard metadata categories include: 
 
 -   Descriptive 
-    
 -   Technical 
-    
 -   Governance
-    
 -   Operational
-    
-
-![Examples of various metadata types as they appear in the data catalog](https://www.alation.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2F7p3vnbbznfiw%2F1FUfVPdOfP3kOnhdZcun4H%2F80df428f87e578e6641825eecf11ff38%2Fmetadata-types-examples-data-catalog.png&w=3840&q=75)
-
-Examples of various types of metadata as they appear in the data catalog
 
 _Descriptive metadata_ includes business titles, definitions, tags, keywords, and other details that describe a data asset, as well as the names and roles of those who have previously worked with that asset.
 
@@ -187,7 +177,7 @@ Advanced search capabilities include searching by natural language (semantic), k
 
 ### **Data lineage**
 
-[Data lineage](https://www.alation.com/blog/what-is-data-lineage/) helps track the flow of data from its origin to its destination and includes metadata about the data assets and transformations. The visualization allows people to understand and trust the data. An example would be to map how a critical data element moves throughout an organization. Because of the extensive metadata, engineers can conduct impact analysis when planning a change and communicate to the owners of any impacted data assets.
+Data lineage helps track the flow of data from its origin to its destination and includes metadata about the data assets and transformations. The visualization allows people to understand and trust the data. An example would be to map how a critical data element moves throughout an organization. Because of the extensive metadata, engineers can conduct impact analysis when planning a change and communicate to the owners of any impacted data assets.
 
 ### **Data quality**
 
@@ -203,8 +193,6 @@ For AI, transparency is about understanding how models are built, trained, and d
 
 It is important to note that AI requires more transparency and traceability in the training datasets and the explainability of the outputs from the model.
 
-![Data and AI governance venn diagram](https://www.alation.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2F7p3vnbbznfiw%2F19sKnGwOfViWZHD2a86M9w%2F20fcf56c252ebc34bdba7a5073302fe1%2Fdata-and-ai-governance-venn-diagram.png&w=3840&q=75)
-
 ### **Self-service analytics**
 
 Data catalogs support self-service by providing one place where people can find, understand, trust, and use data without always relying on IT to access or understand data. The data catalog acts as an internal data marketplace where users can request and gain access to data products and data assets. Data access covers security, privacy, and compliance with sensitive data.
@@ -213,9 +201,7 @@ Data catalogs support self-service by providing one place where people can find,
 
 A data catalog provides an ideal platform for collaboration around data. It facilitates ongoing conversations, where questions and answers are tied directly to the data, enabling everyone to benefit from shared knowledge. Additionally, features like reviews and ratings of data assets allow users to gauge the quality and relevance of data, helping others understand its value and usefulness more effectively.
 
-A data catalog should provide many other capabilities, including support for [data curation](https://www.alation.com/blog/what-is-data-curation/), classification, usage tracking, and other features.
-
-![Image showing key data catalog capabilities](https://www.alation.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2F7p3vnbbznfiw%2F2fdKsHVxAcO9sJj481ilIk%2Fd8a9407321b8dc05415d6642ba01188d%2Fwhat-does-a-data-catalog-do.png&w=3840&q=75)
+A data catalog should provide many other capabilities, including support for data curation, classification, usage tracking, and other features.
 
 ## Benefits of a data catalog
 
@@ -245,13 +231,13 @@ These catalogs grew to include data assets (datasets and reports), making it eas
 
 In the early 21st century, the need for thorough metadata management led to catalogs that provided information about data lineage, quality, connections, and business context. These catalogs became crucial for data governance.
 
-Between 2000 and 2015 the age of big data gave rise to [self-service analytics](https://www.alation.com/blog/what-is-self-service-analytics/). Data catalogs evolved to handle different data sources and became vital for finding and preparing data. Business users sought self-service capabilities to avoid relying on technical data teams during this period, strengthening the need for data catalogs.
+Between 2000 and 2015 the age of big data gave rise to self-service analytics. Data catalogs evolved to handle different data sources and became vital for finding and preparing data. Business users sought self-service capabilities to avoid relying on technical data teams during this period, strengthening the need for data catalogs.
 
 Data catalog companies would emerge to offer platforms to manage data assets, business glossaries, and data governance capabilities.
 
-The modern data catalog era began in 2015 and continues today. Modern catalogs use [AI and ML](https://www.alation.com/blog/ai-and-ml-in-model-governance/) to automate metadata creation, accelerate curation, and enhance data discovery. Today’s data leaders use modern data catalogs to manage the ever-changing data ecosystem, including integrating into more data management processes such as data quality and data governance. 
+The modern data catalog era began in 2015 and continues today. Modern catalogs use AI and ML to automate metadata creation, accelerate curation, and enhance data discovery. Today’s data leaders use modern data catalogs to manage the ever-changing data ecosystem, including integrating into more data management processes such as data quality and data governance. 
 
-As data technology changes and new concepts, such as the modern data stack, data fabric, and [data mesh](https://www.alation.com/blog/data-mesh-architecture/), the data catalog is the one constant part of the data ecosystem that organizations can rely on. 
+As data technology changes and new concepts, such as the modern data stack, data fabric, and data mesh, the data catalog is the one constant part of the data ecosystem that organizations can rely on. 
 
 In short, data catalogs have evolved from simple lists to powerful tools for efficient data management and analytics in the age of AI.
 
@@ -261,9 +247,7 @@ A data catalog brings key improvements to data management by making metadata mor
 
 We work in an age where self-service analytics is a must. IT organizations can’t provide all the data needed by the ever-increasing numbers of people who need to analyze it. But today’s analysts and data scientists are often working blind, without visibility into the data assets that exist, the contents of those data assets, or their quality and usefulness. 
 
-They spend too much time finding and understanding data, often recreating existing data assets. They frequently work with inadequate data, resulting in incorrect analysis and model training. The illustration below shows how analysis processes change with a data catalog.
-
-![Image showing the before and after with and without a data catalog](https://www.alation.com/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2F7p3vnbbznfiw%2F5HwmGmCZ74NC83uQ9ujuu5%2F4fb6a80db924ef01a283e1bba240b826%2Fdata-catalog-before-after__1_.png&w=3840&q=75)
+They spend too much time finding and understanding data, often recreating existing data assets. They frequently work with inadequate data, resulting in incorrect analysis and model training.
 
 Without a catalog, analysts look for data by sorting through documentation, talking to colleagues, relying on tribal knowledge, or simply working with familiar data assets because they know about them. The process is fraught with trial and error, waste and rework, and repeated dataset searching, often leading to working with “close enough” data as time passes. 
 
@@ -386,6 +370,3 @@ The landscape of data catalog products has been evolving rapidly, with several k
 7.  [**Microsoft Azure Purview**](https://azure.microsoft.com/en-us/products/purview): Azure Purview is a unified data governance service offered by Microsoft Azure. It provides a holistic approach to discovering, understanding, and managing data assets across on-premises, multi-cloud, and SaaS environments.
 
 Remember that the best data catalog product for a specific organization depends on its unique requirements, including the scale of operations, budget constraints, and specific use cases. Before choosing a data catalog solution, it’s essential to assess the features, compatibility, and support services offered by these key players to find the most suitable option for your organization’s needs.
-
-
-

@@ -1,4 +1,4 @@
-# Skills Overview (in progress)
+# Skills
 ## Data engineering Foundations:
 
 - [Data Engineering Foundations](https://www.linkedin.com/learning/data-engineering-foundations/what-is-data-engineering?u=1504)
@@ -7,16 +7,16 @@
 
 - [synthetic data for software testers](https://www.linkedin.com/learning/synthetic-data-for-software-testers/discover-the-power-of-synthetic-data?u=1504)
 
-- [the-data-analyst-course-complete-data-analyst-bootcamp](https://www.udemy.com/course/the-data-analyst-course-complete-data-analyst-bootcamp/?couponCode=BFCPSALE24)
+- [the data analyst course complete data analyst bootcamp](https://www.udemy.com/course/the-data-analyst-course-complete-data-analyst-bootcamp/?couponCode=BFCPSALE24)
 
+- [end-to-end data engineering project](https://www.linkedin.com/learning/end-to-end-data-engineering-project/transform-complex-data-into-insights?u=1504)
 
-https://www.linkedin.com/learning/end-to-end-data-engineering-project/transform-complex-data-into-insights?u=1504
+- [complete guide to apache kafka for beginners](https://www.linkedin.com/learning/complete-guide-to-apache-kafka-for-beginners/kafka-course-introduction?u=1504)
 
-https://www.linkedin.com/learning/complete-guide-to-apache-kafka-for-beginners/kafka-course-introduction?u=1504
+- [fundamentals of apache iceberg](https://www.linkedin.com/learning/fundamentals-of-apache-iceberg/what-is-data-lakehouse?u=1504)
 
-https://www.linkedin.com/learning/fundamentals-of-apache-iceberg/what-is-data-lakehouse?u=1504
+- [learning hadoop](https://www.linkedin.com/learning/learning-hadoop-23008320/what-and-why-hadoop?u=1504)
 
-https://www.linkedin.com/learning/learning-hadoop-23008320/what-and-why-hadoop?u=1504
 
 
 ## Python
@@ -30,7 +30,7 @@ https://www.linkedin.com/learning/learning-hadoop-23008320/what-and-why-hadoop?u
 - [python for data engineering from beginner to advanced](https://www.linkedin.com/learning/python-for-data-engineering-from-beginner-to-advanced/welcome-to-the-course?u=1504)
 
 
-- [100-days-of-code](https://www.udemy.com/course/100-days-of-code/?couponCode=BFCPSALE24)
+- [100 days of code](https://www.udemy.com/course/100-days-of-code/?couponCode=BFCPSALE24)
 
 
 
@@ -40,29 +40,22 @@ https://www.linkedin.com/learning/learning-hadoop-23008320/what-and-why-hadoop?u
 
 - [apache spark essential training big data engineering](https://www.linkedin.com/learning/apache-spark-essential-training-big-data-engineering-2021/driving-big-data-engineering-with-apache-spark?u=1504)
 
-
-
-
 ## DataOps
 - [data engineering pipeline management with apache airflow](https://www.linkedin.com/learning/data-engineering-pipeline-management-with-apache-airflow/features-for-data-engineering-pipeline-management?u=1504)
 
 - [data management with apache nifi](https://www.linkedin.com/learning/data-management-with-apache-nifi/data-management-with-apache-nifi?u=1504)
 
-- [learning-apache-airflow](https://www.linkedin.com/learning/learning-apache-airflow/an-overview-of-apache-airflow?u=1504)
-
-
+- [learning apache airflow](https://www.linkedin.com/learning/learning-apache-airflow/an-overview-of-apache-airflow?u=1504)
 
 ## Databases (SQL,NOSQL)
 - [introduction to spark sql and dataframes](https://www.linkedin.com/learning/introduction-to-spark-sql-and-dataframes/apache-spark-sql-and-data-analysis-21043116?u=1504)
 - [advanced nosql for data science](https://www.linkedin.com/learning/advanced-nosql-for-data-science/welcome-23229630?u=1504)
-- [etl-in-python-and-sql](https://www.linkedin.com/learning/etl-in-python-and-sql/create-an-etl-in-python-and-sql?u=1504)
+- [etl in python and sql](https://www.linkedin.com/learning/etl-in-python-and-sql/create-an-etl-in-python-and-sql?u=1504)
 - [nosql essential training](https://www.linkedin.com/learning/nosql-essential-training/get-to-know-nosql?u=1504)
 - [mysql for data engineering](https://www.linkedin.com/learning/mysql-for-data-engineering/hacking-mysql?u=1504)
 
-
 ## Hands-on ETL and Big data test automation tools
-
-### properiatry
+### proprietary
 - [Informatica Data Validation](https://docs.informatica.com/data-integration/powercenter/10-5/data-validation-option-user-guide/introduction-to-data-validation-option/data-validation-option-overview.html)
 - [QuerySurge](https://www.querysurge.com/)
 - [ICEDQ](https://icedq.com/)
@@ -90,3 +83,8 @@ https://www.linkedin.com/learning/learning-hadoop-23008320/what-and-why-hadoop?u
 
 ### Custom framework
 TBD
+
+# Evaluation
+- pass hackerrank python and sql evaulation kit.
+- linkedin and udemy courses certificates
+- project capstone
