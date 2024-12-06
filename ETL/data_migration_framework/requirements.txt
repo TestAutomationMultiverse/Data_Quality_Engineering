@@ -1,0 +1,5 @@
+PyYAML
+pandas
+pytest
+loguru
+tabulate

@@ -1,0 +1,20 @@
+source:
+  type: "database"
+  host: "localhost"
+  database: "source_db"
+  user: "user"
+  password: "password"
+  port: 5432
+
+target:
+  type: "database"
+  host: "localhost"
+  database: "target_db"
+  user: "user"
+  password: "password"
+  port: 5432
+
+validation_criteria:
+  - column_completeness
+  - row_count
+  - data_integrity

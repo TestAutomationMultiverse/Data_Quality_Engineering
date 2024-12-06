@@ -88,3 +88,50 @@ TBD
 - pass hackerrank python and sql evaulation kit.
 - linkedin and udemy courses certificates
 - project capstone
+
+
+
+| **Stage**         | **Topic**                    | **Tools/Skills**                              | **Resources**                         |
+|--------------------|------------------------------|-----------------------------------------------|---------------------------------------|
+| **1. Foundation** | Mathematics Basics           | Linear Algebra, Calculus, Statistics          | Khan Academy, 3Blue1Brown            |
+|                    | Programming Basics           | Python, R                                     | Codecademy, freeCodeCamp              |
+| **2. Data Wrangling** | Data Manipulation           | Pandas, NumPy                                | DataCamp, Kaggle                      |
+|                    | Data Cleaning               | Handling Missing Data, Outliers              | Real Python, Towards Data Science     |
+| **3. Data Visualization** | Exploratory Data Analysis     | Matplotlib, Seaborn, Plotly                  | Data Viz Courses on Coursera/edX      |
+| **4. Databases**   | SQL Basics                  | Querying, Joins, Aggregation                 | SQLZOO, Mode Analytics                |
+| **5. Machine Learning** | Supervised Learning          | Regression, Classification                    | scikit-learn Documentation, Coursera  |
+|                    | Unsupervised Learning       | Clustering, Dimensionality Reduction         | fast.ai, Udemy                        |
+| **6. Advanced Topics** | Deep Learning               | Neural Networks, TensorFlow, PyTorch         | DeepLearning.AI, fast.ai              |
+|                    | Natural Language Processing | NLTK, spaCy, Transformers                    | Hugging Face, NLP with Python Book    |
+| **7. Deployment**  | Model Deployment            | Flask, Streamlit, Docker                     | YouTube Tutorials, Medium Articles    |
+| **8. Practice**    | Real-world Projects         | Kaggle Competitions, Open Data Sets          | Kaggle, UCI ML Repository             |
+| **9. Soft Skills** | Communication & Storytelling | PowerPoint, Tableau, Public Speaking         | LinkedIn Learning, Toastmasters       |
+| **10. Career Prep**| Building a Portfolio        | GitHub, Blogs, Presentations                 | GitHub Docs, Medium                   |
+
+
+
+# Data Warehousing and ETL Learning Track
+
+| **Phase**      | **Topic**                            | **Description**                                                                                   | **Resources**                                                                                       |
+|-----------------|--------------------------------------|---------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
+| **1. Basics**  | Introduction to Data Warehousing     | Learn the fundamentals of data warehousing, its purpose, and use cases.                          | [Introduction to Data Warehousing](https://www.tutorialspoint.com/data_warehouse/index.htm)        |
+|                 | Data Warehouse Architecture          | Understand the key components of a data warehouse and its architecture (e.g., star schema).      | [Star Schema vs Snowflake Schema](https://www.dataversity.net)                                      |
+|                 | ETL Process Basics                  | Learn the ETL (Extract, Transform, Load) process and its role in data pipelines.                 | [ETL Basics](https://www.educba.com/extract-transform-load/)                                       |
+| **2. Tools**   | ETL Tools Overview                   | Get familiar with popular ETL tools (e.g., Talend, Informatica, Apache NiFi).                    | [Top ETL Tools](https://www.guru99.com/etl-tools.html)                                              |
+|                 | Data Warehousing Tools              | Explore tools like Snowflake, Amazon Redshift, and Google BigQuery.                              | [Snowflake Documentation](https://docs.snowflake.com/)                                             |
+| **3. Design**  | Data Modeling                        | Learn concepts like fact tables, dimension tables, and normalization/denormalization.            | [Data Modeling Basics](https://www.learndatamodeling.com/)                                         |
+|                 | Designing ETL Pipelines             | Understand best practices for designing scalable ETL pipelines.                                  | [ETL Pipeline Guide](https://realpython.com/)                                                      |
+| **4. Advanced**| Incremental Data Loading             | Explore strategies for loading only new or updated data.                                         | [Incremental Loading Techniques](https://www.sqlshack.com/)                                        |
+|                 | Data Quality and Governance         | Learn techniques to ensure data quality and compliance in ETL pipelines.                        | [Data Quality Basics](https://www.dataversity.net/)                                                |
+|                 | Performance Tuning                  | Learn how to optimize data warehouses and ETL processes for better performance.                  | [ETL Optimization Guide](https://www.datarevenue.com/en-blog/etl-pipeline-best-practices)          |
+| **5. Practice**| Build a Mini Project                 | Implement a small data warehouse with an ETL pipeline using open-source tools.                   | Tutorials from [Kaggle](https://www.kaggle.com/) and [YouTube](https://www.youtube.com/)           |
+|                 | Real-World Case Studies             | Study real-world data warehouse implementations to deepen your understanding.                    | [Case Studies](https://aws.amazon.com/solutions/case-studies/)                                     |
+| **6. Next Steps** | Certifications                    | Pursue certifications like AWS Certified Data Analytics or Snowflake SnowPro.                    | [Certification Guides](https://www.coursera.org/)                                                  |
+|                 | Community Involvement               | Join communities and forums to stay updated and exchange knowledge.                              | [Reddit - Data Engineering](https://www.reddit.com/r/dataengineering/)                             |
+
+
+Section 1: computer science fundamentals
+    - 
+Section 2: Building Foundation
+
+Section 3: Core Data Engineering Foundation

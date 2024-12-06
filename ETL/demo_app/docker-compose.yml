@@ -1,0 +1,56 @@
+services:
+  flask_app:
+    build:
+      context: .
+    ports:
+      - "5000:5000"
+    depends_on:
+      - source_db
+      - target_db
+    environment:
+      - SOURCE_DB_HOST=source_db
+      - TARGET_DB_HOST=target_db
+      - DB_USER=user
+      - DB_PASSWORD=password
+      - SOURCE_DB_PORT=5433
+      - TARGET_DB_PORT=5434
+    extra_hosts: 
+          - "host.docker.internal:host-gateway"
+    networks:
+      - my_network
+  source_db:
+    image: postgres:13
+    container_name: source_db
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: old_db
+    ports:
+      - "5433:5432"
+    volumes:
+      - ./init/source/init.sql:/docker-entrypoint-initdb.d/init.sql
+    extra_hosts: 
+          - "host.docker.internal:host-gateway"
+    networks:
+      - my_network
+  target_db:
+    image: postgres:13
+    container_name: target_db
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: new_db
+    ports:
+      - "5434:5432"
+    volumes:
+      - ./init/target/init.sql:/docker-entrypoint-initdb.d/init.sql
+    extra_hosts: 
+          - "host.docker.internal:host-gateway"
+    networks:
+      - my_network
+volumes:
+  source_db_data:
+  target_db_data:
+
+networks:
+  my_network:

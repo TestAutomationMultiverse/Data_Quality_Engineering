@@ -7,6 +7,13 @@
 			"version": "3.11"
 	  }
 	},
-	"postCreateCommand": "pip install mkdocs-material mkdocs-minify-plugin mkdocs-redirects"
+	"postCreateCommand": "pip install mkdocs-material mkdocs-minify-plugin mkdocs-redirects",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"bierner.markdown-mermaid"
+			]
+		}
+	}
 
 }

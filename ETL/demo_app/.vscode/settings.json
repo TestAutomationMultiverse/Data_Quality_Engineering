@@ -1,0 +1,30 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5433,
+            "driver": "PostgreSQL",
+            "name": "demo1",
+            "database": "old_db",
+            "username": "user"
+        },
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5434,
+            "driver": "PostgreSQL",
+            "name": "demo2",
+            "database": "new_db",
+            "username": "user"
+        }
+    ],
+    "cSpell.words": [
+        "jsonify",
+        "psycopg",
+        "unnormalized"
+    ],
+    "markdown.styles": [
+        "https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+    ]
+}
