@@ -135,3 +135,28 @@ Section 1: computer science fundamentals
 Section 2: Building Foundation
 
 Section 3: Core Data Engineering Foundation
+
+
+
+
+
+
+
+## How to Learn Data Engineering: Step-by-Step Roadmap
+
+If your goal is to learn data engineering from scratch, and you don’t have a background in a related field, the following roadmap is for you!  
+You would be more than ready to start applying to data engineering roles in 12 months (or less, depending on your level of commitment).
+
+| **Step**                            | **What to Learn**                                       | **Tools**                                                                 | **Example Projects**                                                        |
+|-------------------------------------|--------------------------------------------------------|--------------------------------------------------------------------------|-----------------------------------------------------------------------------|
+| **Step 1: Build a strong foundation in programming (Month 1 - 3)** | - Python for scripting and data manipulation. <br>- SQL for querying relational databases. <br>- Shell scripting for task automation. | - Python libraries: Pandas, NumPy. <br>- SQL platforms: Mode Analytics, SQLZoo. <br>- Linux command tutorials. | - Write a Python script to clean messy data. <br>- Create a SQL query to analyze sales data from a database. |
+| **Step 2: Learn database fundamentals (Month 4)**      | - Relational database design and optimization. <br>- Basics of NoSQL databases for unstructured data. | - Relational: MySQL, PostgreSQL. <br>- NoSQL: MongoDB, Cassandra.         | - Design a relational schema for a store. <br>- Build a NoSQL database for a social media app.               |
+| **Step 3: Master ETL and data pipelines (Month 5 - 6)**| - Concepts of Extract, Transform, Load (ETL). <br>- Workflow orchestration tools. | - ETL tools: Apache Airflow, dbt. <br>- Cloud warehouses: Snowflake, Redshift. | - Build an ETL pipeline to extract API data, clean it, and load it into a data warehouse. |
+| **Step 4: Explore cloud computing (Month 7 - 8)**      | - Basics of AWS, Azure, and Google Cloud. <br>- How to deploy pipelines on the cloud. | - AWS: S3, Glue, Redshift. <br>- Azure: Synapse Analytics. <br>- GCP: BigQuery, Dataflow. | - Deploy a pipeline on AWS Glue. <br>- Analyze data in BigQuery.                                    |
+| **Step 5: Understand big data concepts (Month 9 - 10)**| - Frameworks for big data storage and processing. <br>- Real-time data streaming. | - Hadoop for storage. <br>- Apache Spark for processing. <br>- Kafka for streaming. | - Build a Spark pipeline to process large datasets. <br>- Stream live logs using Kafka.              |
+| **Step 6: Apply your skills through projects (Month 11 - 12)** | - Combine learned skills into real-world scenarios. <br>- Build portfolio projects. | - GitHub for sharing work. <br>- Databricks for big data. <br>- Blogs to document your process. | - Stream real-time data into a data lake. <br>- Create a data warehouse pipeline with Snowflake.    |
+
+
+
+
+load test your power pi application: https://www.youtube.com/watch?v=UFbCh5TaR4w

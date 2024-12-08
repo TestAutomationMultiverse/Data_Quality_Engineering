@@ -1,0 +1,91 @@
+@startuml
+skinparam componentStyle rectangle
+
+package "Network: sparknet" {
+    component Metastore {
+        [metastore]
+        note bottom of metastore
+          - PostgreSQL database
+          - Hostname: metastore
+          - IP: 172.28.1.1
+        end note
+    }
+
+    component Master {
+        [master]
+        note bottom of master
+          - Spark Master node
+          - Hostname: master
+          - IP: 172.28.1.2
+        end note
+    }
+
+    component Worker1 {
+        [worker1]
+        note bottom of worker1
+          - Spark Worker node
+          - Hostname: worker1
+          - IP: 172.28.1.3
+        end note
+    }
+
+    component Worker2 {
+        [worker2]
+        note bottom of worker2
+          - Spark Worker node
+          - Hostname: worker2
+          - IP: 172.28.1.4
+        end note
+    }
+
+    component History {
+        [history]
+        note bottom of history
+          - Spark History server
+          - Hostname: history
+          - IP: 172.28.1.5
+        end note
+    }
+
+    component Jupyter {
+        [jupyter]
+        note bottom of jupyter
+          - Jupyter Notebook
+          - Hostname: jupyter
+          - IP: 172.28.1.6
+        end note
+    }
+
+    component NiFi {
+        [nifi]
+        note bottom of nifi
+          - Apache NiFi
+          - Hostname: nifi
+          - IP: 172.28.1.7
+        end note
+    }
+
+    component Airflow {
+        [airflow]
+        note bottom of airflow
+          - Apache Airflow
+          - Hostname: airflow
+          - IP: 172.28.1.8
+        end note
+    }
+}
+
+metastore -[hidden]-> master
+master --> worker1 : Spark communication
+master --> worker2 : Spark communication
+worker1 --> history : Log communication
+worker2 --> history : Log communication
+jupyter --> master : Notebook jobs
+jupyter --> worker1 : Distributed jobs
+jupyter --> worker2 : Distributed jobs
+airflow --> metastore : Database access
+airflow --> master : Orchestrates jobs
+airflow --> jupyter : Workflow integration
+nifi --> master : Data flow jobs
+nifi --> airflow : Orchestrates data flows
+@enduml
