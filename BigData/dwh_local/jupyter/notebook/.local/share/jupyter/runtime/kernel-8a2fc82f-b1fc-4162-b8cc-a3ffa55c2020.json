@@ -1,0 +1,13 @@
+{
+  "shell_port": 42753,
+  "iopub_port": 43173,
+  "stdin_port": 44339,
+  "control_port": 53035,
+  "hb_port": 36639,
+  "ip": "127.0.0.1",
+  "key": "c7a6b3e3-243fc6459a69f8d2ffbf7160",
+  "transport": "tcp",
+  "signature_scheme": "hmac-sha256",
+  "kernel_name": "python3",
+  "jupyter_session": "/home/jupyter/Chispa.ipynb"
+}

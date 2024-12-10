@@ -34,11 +34,22 @@ nav:
   - Home:
     - index.md
     - data_governance.md
-  - Data Testing Concepts:
+  - BigData Concepts:
+    - BasicConcepts/TypesOfData.md  
+    - BasicConcepts/BigDataFileFormats.md
+    - BasicConcepts/metadata.md
+    - BasicConcepts/DatabaseManagement.md
+  - Statistics Basics:
+    - statistics/beginner.md
+    - statistics/advanced.md
+    - statistics/intermediate.md
+  - BigData Testing Concepts:
     - BasicConcepts/intro.md
     - BasicConcepts/ETLTesting.md
     - BasicConcepts/Database_Monitoring.md
     - BasicConcepts/data_monitoring.md
+    - BasicConcepts/visualizationtesting.md
+
   - Test Artifacts:
     - test artifacts/Test_Strategy.md
     - test artifacts/Test_Plan.md

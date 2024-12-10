@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:22.04
 
 RUN sed -i -e "s|http://archive.ubuntu.com|http://jp.archive.ubuntu.com|g" /etc/apt/sources.list \
  && apt-get -qq update  \
@@ -86,9 +86,9 @@ RUN set -x \
  && tar -xf /tmp/hive.tar.gz -C $HIVE_HOME --strip-components 1 \
  && rm /tmp/hive*
 
-#RUN sudo rm $HIVE_HOME/lib/guava-*.jar \
-# && sudo cp $HADOOP_HOME/share/hadoop/hdfs/lib/guava-*.jar $HIVE_HOME/lib/
-#RUN mv /opt/hive/lib/log4j-slf4j-impl-2.6.2.jar /opt/hive/lib/log4j-slf4j-impl-2.6.2.jar.bak
+RUN sudo rm $HIVE_HOME/lib/guava-*.jar \
+&& sudo cp $HADOOP_HOME/share/hadoop/hdfs/lib/guava-*.jar $HIVE_HOME/lib/
+RUN mv /opt/hive/lib/log4j-slf4j-impl-2.6.2.jar /opt/hive/lib/log4j-slf4j-impl-2.6.2.jar.bak
 
 ENV HIVE_CONF_DIR=$HIVE_HOME/conf
 ENV PATH=$HIVE_HOME/sbin:$HIVE_HOME/bin:$PATH
