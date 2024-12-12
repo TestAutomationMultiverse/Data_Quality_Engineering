@@ -62,8 +62,11 @@ RUN sudo pip install -U pip &&\
     great_expectations \
     pydeequ \
     pandera \
+    pytest \
+    unittest \
     soda-core-postgres \
-    ydata-profiling[notebook,unicode,pyspark] jupyter-contrib-nbextensions 
+    ydata-profiling[notebook,unicode,pyspark] jupyter-contrib-nbextensions \
+    bigquery_jupyter_plugin
 
 WORKDIR /home/jupyter
 

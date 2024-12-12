@@ -11,7 +11,8 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"bierner.markdown-mermaid"
+				"bierner.markdown-mermaid",
+				"ms-azuretools.vscode-docker"
 			]
 		}
 	}
