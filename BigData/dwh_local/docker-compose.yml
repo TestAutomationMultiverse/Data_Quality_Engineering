@@ -2,10 +2,11 @@ services:
   metastore:
     image: postgres:11
     hostname: metastore
+    container_name: metastore
     environment:
       POSTGRES_PASSWORD: jupyter
     ports:
-      - "5432:5432"
+      - "5433:5432"
     volumes:
       - metastore:/var/lib/postgresql/data
       - ./ddl/init.sql:/docker-entrypoint-initdb.d/init.sql
@@ -22,6 +23,7 @@ services:
   master:
     image: hadoop-hive-spark-master
     hostname: master
+    container_name: spark-Mmaster
     depends_on:
       - metastore
     environment:
@@ -50,6 +52,7 @@ services:
   worker1:
     image: hadoop-hive-spark-worker
     hostname: worker1
+    container_name: spark-worker1
     depends_on:
       - master
     environment:
@@ -75,6 +78,7 @@ services:
   worker2:
     image: hadoop-hive-spark-worker
     hostname: worker2
+    container_name: spark-worker2
     depends_on:
       - master
     environment:
@@ -100,6 +104,7 @@ services:
   history:
     image: hadoop-hive-spark-history
     hostname: history
+    container_name: hadoop-history
     depends_on:
       - master
       - worker1
@@ -120,22 +125,6 @@ services:
       - "master:172.28.1.2"
       - "worker1:172.28.1.3"
       - "worker2:172.28.1.4"
-
-  # zeppelin:
-  #   image: apache/zeppelin:v1
-  #   container_name: zeppelin-notebook
-  #   ports:
-  #     - "8084:8080"
-  #   volumes:
-  #     - ./spark:/zeppelin/spark
-  #     - ./notebooks:/zeppelin/notebook
-  #   environment:
-  #     - "MASTER=172.28.1.6"
-  #     - "SPARK_MASTER=172.28.1.6"
-  #     - "SPARK_HOME=/zeppelin/spark"
-  #   networks:
-  #     sparknet:
-  #       ipv4_address: 172.28.1.12
 
   jupyter:
     image: hadoop-hive-spark-jupyter
@@ -162,6 +151,105 @@ services:
       - "worker1:172.28.1.3"
       - "worker2:172.28.1.4"
       - "history:172.28.1.5"
+
+  nifi: 
+    cap_add:
+      - NET_ADMIN 
+    image: apache/nifi
+    container_name: nifi
+    environment:
+      - SINGLE_USER_CREDENTIALS_USERNAME=admin
+      - SINGLE_USER_CREDENTIALS_PASSWORD=dataPipeAppPwd!
+    ports:
+      - "8089:8080/tcp"
+      - "8443:8443/tcp" 
+      - "514:514/tcp"
+      - "514:514/udp"
+      - "2055:2055/udp"
+    restart: unless-stopped
+    networks:
+      sparknet:
+        ipv4_address: 172.28.1.7
+
+  postgres:
+    image: postgres:12
+    container_name: airflow-postgres
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=airflow
+      - POSTGRES_PORT=5432
+    ports:
+      - "5432:5432"
+      
+  airflow-init:
+    image: apache/airflow:2.0.0
+    container_name: airflow_init
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+      - AIRFLOW__CORE__SQL_ALCHEMY_CONN=postgresql+psycopg2://postgres:postgres@postgres:5432/airflow  # Update the connection string with new port 5433
+      - AIRFLOW__CORE__FERNET_KEY=FB0o_zt4e3Ziq3LdUUO7F2Z95cvFFx16hU8jTeR1ASM=
+      - AIRFLOW__CORE__LOAD_EXAMPLES=False
+      - AIRFLOW__CORE__LOGGING_LEVEL=INFO
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./airflow/logs:/opt/airflow/logs
+      - ./airflow/plugins:/opt/airflow/plugins
+      - ./airflow/airflow.cfg:/opt/airlfow/airflow.cfg
+    depends_on:
+      - postgres
+    entrypoint: /bin/bash
+    command:
+      - -c
+      - airflow users list || ( airflow db init &&
+        airflow users create
+          --role Admin
+          --username airflow
+          --password airflow
+          --email airflow@airflow.com
+          --firstname airflow
+          --lastname airflow )
+    restart: on-failure
+
+  airflow-webserver:
+    image: apache/airflow:2.0.0
+    container_name: airflow_webserver
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+      - AIRFLOW__CORE__SQL_ALCHEMY_CONN=postgresql+psycopg2://postgres:postgres@postgres:5432/airflow  # Update the connection string with new port 5433
+      - AIRFLOW__CORE__FERNET_KEY=FB0o_zt4e3Ziq3LdUUO7F2Z95cvFFx16hU8jTeR1ASM=
+      - AIRFLOW__CORE__LOAD_EXAMPLES=False
+      - AIRFLOW__CORE__LOGGING_LEVEL=INFO
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./airflow/logs:/opt/airflow/logs
+      - ./airflow/plugins:/opt/airflow/plugins
+      - ./airflow/airflow.cfg:/opt/airlfow/airflow.cfg
+      - ./airflow/pipline:/usr/local/airflow/dags
+
+    command: airflow webserver
+    ports:
+      - 8083:8080
+    restart: always
+
+  airflow-scheduler:
+    image: apache/airflow:2.0.0
+    container_name: airflow_scheduler
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+      - AIRFLOW__CORE__SQL_ALCHEMY_CONN=postgresql+psycopg2://postgres:postgres@postgres:5432/airflow  # Update the connection string with new port 5433
+      - AIRFLOW__CORE__FERNET_KEY=FB0o_zt4e3Ziq3LdUUO7F2Z95cvFFx16hU8jTeR1ASM=
+      - AIRFLOW__CORE__LOAD_EXAMPLES=False
+      - AIRFLOW__CORE__LOGGING_LEVEL=INFO
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./airflow/logs:/opt/airflow/logs
+      - ./airflow/plugins:/opt/airflow/plugins
+      - ./airflow/airflow.cfg:/opt/airlfow/airflow.cfg
+    command: airflow scheduler
+    restart: always
+
+
 
 
 volumes:

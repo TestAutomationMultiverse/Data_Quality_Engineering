@@ -2,7 +2,7 @@
 
 # Enable the `widgetsnbextension` extension
 echo "Enabling widgetsnbextension..."
-jupyter nbextension enable --py widgetsnbextension
+jupyter nbextension enable --py widgetsnbextension jupyter-contrib-nbextensions bigquery_jupyter_plugin 
 
 # Start Jupyter Notebook with specific options
 echo "Starting Jupyter Notebook..."

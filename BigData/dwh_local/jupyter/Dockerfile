@@ -50,23 +50,17 @@ ENV PATH=$HIVE_HOME/sbin:$HIVE_HOME/bin:$PATH
 
 FROM base AS final
 
+# RUN sudo pip install -U pip &&\
+#     sudo pip install --no-cache-dir \
+#     tensorflow-serving-api \
+#     ydata-profiling[notebook,unicode,pyspark] jupyter-contrib-nbextensions \
+#     bigquery_jupyter_plugin
+
+COPY requirements.txt .
+
 RUN sudo pip install -U pip &&\
-    sudo pip install --no-cache-dir \
-    pandas \
-    openpyxl \
-    findspark \
-    pyspark \
-    chispa \
-    jupyter \
-    tensorflow-serving-api \
-    great_expectations \
-    pydeequ \
-    pandera \
-    pytest \
-    unittest \
-    soda-core-postgres \
-    ydata-profiling[notebook,unicode,pyspark] jupyter-contrib-nbextensions \
-    bigquery_jupyter_plugin
+    sudo pip install -r requirements.txt
+
 
 WORKDIR /home/jupyter
 
