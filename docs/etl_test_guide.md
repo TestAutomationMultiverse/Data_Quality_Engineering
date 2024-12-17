@@ -1,78 +1,10 @@
-# **A guide to ETL Testing**
+# A guide to ETL Testing
 
-[
+Get started with ETL Testing using this blog which is written based on real-world industry case studies and experience.
 
-![Mohit Mair](https://miro.medium.com/v2/resize:fill:66:66/1*9pgCDEawG-bviQsbfsGcCQ.jpeg)
-
-
+![](/docs/assets/etl_flow.png)
 
 
-
-](https://medium.com/@mohitmair?source=post_page---byline--f1967115a996--------------------------------)
-
-[
-
-![Analytics Vidhya](https://miro.medium.com/v2/resize:fill:36:36/1*Qw8AOQSnnlz7SLiwAda2jw.png)
-
-
-
-
-
-](https://medium.com/analytics-vidhya?source=post_page---byline--f1967115a996--------------------------------)
-
-[Mohit Mair](https://medium.com/@mohitmair?source=post_page---byline--f1967115a996--------------------------------)
-
-·
-
-[Follow](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fsubscribe%2Fuser%2Fa2950d4ee4b5&operation=register&redirect=https%3A%2F%2Fmedium.com%2Fanalytics-vidhya%2Fetl-testing-in-a-nutshell-f1967115a996&user=Mohit+Mair&userId=a2950d4ee4b5&source=post_page-a2950d4ee4b5--byline--f1967115a996---------------------post_header-----------)
-
-Published in
-
-[
-
-Analytics Vidhya
-
-](https://medium.com/analytics-vidhya?source=post_page---byline--f1967115a996--------------------------------)
-
-·
-
-8 min read
-
-·
-
-Jul 26, 2021
-
-[
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fvote%2Fanalytics-vidhya%2Ff1967115a996&operation=register&redirect=https%3A%2F%2Fmedium.com%2Fanalytics-vidhya%2Fetl-testing-in-a-nutshell-f1967115a996&user=Mohit+Mair&userId=a2950d4ee4b5&source=---header_actions--f1967115a996---------------------clap_footer-----------)
-
-44
-
-2
-
-[](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2F_%2Fbookmark%2Fp%2Ff1967115a996&operation=register&redirect=https%3A%2F%2Fmedium.com%2Fanalytics-vidhya%2Fetl-testing-in-a-nutshell-f1967115a996&source=---header_actions--f1967115a996---------------------bookmark_footer-----------)
-
-[
-
-Listen
-
-
-
-
-
-
-
-](https://medium.com/m/signin?actionUrl=https%3A%2F%2Fmedium.com%2Fplans%3Fdimension%3Dpost_audio_button%26postId%3Df1967115a996&operation=register&redirect=https%3A%2F%2Fmedium.com%2Fanalytics-vidhya%2Fetl-testing-in-a-nutshell-f1967115a996&source=---header_actions--f1967115a996---------------------post_audio_button-----------)
-
-Share
-
-> Get started with ETL Testing using this blog which is written based on real-world industry case studies and experience.
-
-![](https://miro.medium.com/v2/resize:fit:1000/1*pCNgyBol6B8pUwRY0JgG3Q.png)
-
-A typical ETL flow (stage names may vary)
-
-Even though the above diagram is a bit of simplification, this is how most ETL workflows may look like.
 
 To put simply, ETL is an automated process to move data from source systems to target systems, involving various stages for **E**xtract, **T**ransform and **L**oad sub-processes, _without data-loss_ and while maintaining _data-integrity_. This also, is usually referred to as _data-migration_.
 
@@ -232,10 +164,4 @@ Some common challenges faced could be:
 -   Getting hold of accurate source and target schemas mapping can be challenging.
 -   Choosing right testing tool is key. Native technologies may work best as they seamlessly integrate with source code and CI/CD process.
 -   Full volume testing and data reconciliations need powerful test environment which can be costly to build and execute
-
-[
-
-](https://medium.com/tag/etl-testing?source=post_page-----f1967115a996--------------------------------)
-
-
 

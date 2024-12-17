@@ -1,6 +1,6 @@
 # Big Data Cluster Docker
 
-## Software
+## local cluster list
 
 * [Apache Hadoop](https://hadoop.apache.org/):
   * For distributed processing of large data sets, urls:

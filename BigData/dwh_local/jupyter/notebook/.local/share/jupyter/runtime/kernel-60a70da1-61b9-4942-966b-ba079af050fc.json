@@ -1,0 +1,13 @@
+{
+  "shell_port": 56709,
+  "iopub_port": 42609,
+  "stdin_port": 52417,
+  "control_port": 46321,
+  "hb_port": 58525,
+  "ip": "127.0.0.1",
+  "key": "85b4200c-26c9536341439e6671cd5ad4",
+  "transport": "tcp",
+  "signature_scheme": "hmac-sha256",
+  "kernel_name": "python3",
+  "jupyter_session": "/home/jupyter/notebooks/greatexpectations.ipynb"
+}
