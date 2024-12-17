@@ -164,3 +164,4 @@ BigData/dwh_local/jupyter/notebook/.cache/
 BigData/dwh_local/jupyter/notebook/.great_expectations/
 BigData/dwh_local/jupyter/notebook/.ipython/
 BigData/dwh_local/jupyter/notebook/.jupyter/
+BigData/dwh_local/airflow/logs/scheduler/latest
